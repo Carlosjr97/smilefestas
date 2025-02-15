@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Pula-Pula</title>
+    <link rel="icon" href="./img/1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #ECB9CA, #3498db);
+            position: relative;
+            animation: bgAnimation 5s infinite alternate;
+            flex-direction: column;
+            padding: 20px;
+        }
+        @keyframes bgAnimation {
+            from { background-position: left; }
+            to { background-position: right; }
+        }
+        .container {
+            max-width: 90%;
+            width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-button img {
+            width: 24px;
+            height: 24px;
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .smile {
+            width: 95px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            animation: slideIn 1.5s ease-out;
+        }
+        p {
+            font-size: 16px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .whatsapp-button {
+                font-size: 16px;
+                padding: 12px 16px;
+            }
+            .smile {
+                width: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="img/1.png" alt="smile" class="smile">
+    <div class="container">
+        <img src="img/giphy.gif" alt="Logo" class="logo">
+        <h1>Alugue um Pula-Pula!</h1>
+        <p>Garanta momentos inesquecíveis para a criançada!</p>
+        <a href="https://wa.me/SEUNUMERO" class="whatsapp-button" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            Reserve Agora!
+        </a>
+    </div>
+</body>
+</html>
